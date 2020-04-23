@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function duiCheng (num) {
+        var sNum =
+          String(num)
+            .split('')
+            .reverse()
+            .join('') - 0
+        return sNum === num
+      }
+      
+      console.log(duiCheng(21))
+    </script>
+  </body>
+</html>
