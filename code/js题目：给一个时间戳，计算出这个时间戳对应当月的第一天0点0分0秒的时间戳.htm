@@ -8,14 +8,15 @@
   </head>
   <body>
     <script>
-      var oneDayMs = 24 * 60 * 60 * 1000
-      let nowTime = new Date()
-      function Computed (nowTime, oneDayMs) {
-        var jsTime = Math.floor(nowTime / oneDayMs) * oneDayMs + ATime
-        return jsTime
-      }
-      console.log(Computed(nowTime,oneDayMs));
+      // 获取时间戳 (本月第一天00.00.00  本月最后一天23.59.59)
+      var data = new Date() //本月
+      data.setDate(1)
+      data.setHours(0)
+      data.setSeconds(0)
+      data.setMinutes(0)
+     
       
+      console.log('本月第一天0点' + data.getTime())
     </script>
   </body>
 </html>
